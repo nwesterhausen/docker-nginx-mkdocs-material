@@ -1,7 +1,9 @@
 FROM nginx:stable-alpine
 
+LABEL maintainer="Nicholas Westerhausen"
 
-ENV DOC_REPO https://github.com/nwesterhausen/howto-wiki
+# By default, use this project's own git repo for the wiki
+ENV DOC_REPO https://github.com/nwesterhausen/docker-nginx-mkdocs-material
 
 RUN apk update && \
   apk add --no-cache \ 
