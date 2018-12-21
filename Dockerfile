@@ -15,7 +15,8 @@ RUN pip install --upgrade pip && \
   pip install mkdocs mkdocs-material
 
 COPY run.sh /run.sh
-RUN chmod +x /run.sh
+RUN chmod +x /run.sh && \
+    mkdir /docs
 
 EXPOSE 80
 
