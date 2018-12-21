@@ -14,10 +14,9 @@ RUN apk update && \
 RUN pip install --upgrade pip && \
   pip install mkdocs mkdocs-material
 
-WORKDIR /docs
+COPY run.sh /run.sh
+RUN chmod +x /run.sh
 
 EXPOSE 80
-
-COPY run.sh /run.sh
 
 CMD /run.sh
