@@ -20,4 +20,4 @@ EXPOSE 80
 
 COPY run.sh /run.sh
 
-CMD /run.sh "$DOC_REPO"
+CMD /run.sh
