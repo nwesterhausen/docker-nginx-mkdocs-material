@@ -1,0 +1,3 @@
+site_name: Static MKDocs Site
+theme:
+  name: 'material'
