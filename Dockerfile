@@ -24,6 +24,9 @@ RUN apk add --no-cache \
 ## Remove build-dep packages
   && apk del .build-deps
 
+## Expose the web port used by nginx
+EXPOSE 80
+
 ## By default, use this project's own git repo for the wiki
 ENV DOC_REPO https://github.com/nwesterhausen/docker-nginx-mkdocs-material
 
@@ -31,7 +34,5 @@ ENV DOC_REPO https://github.com/nwesterhausen/docker-nginx-mkdocs-material
 COPY run.sh /run.sh
 RUN chmod +x /run.sh \
   && mkdir /docs
-
-EXPOSE 80
 
 CMD /run.sh
