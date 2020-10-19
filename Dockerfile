@@ -1,5 +1,4 @@
 FROM nginx:alpine
-LABEL maintainer="Nicholas Westerhausen"
 
 ## Install Packages
 RUN apk add --no-cache \
@@ -29,6 +28,21 @@ EXPOSE 80
 
 ## By default, use this project's own git repo for the wiki
 ENV DOC_REPO https://github.com/nwesterhausen/docker-nginx-mkdocs-material
+
+## Args used by labels
+ARG BUILD_DATE
+ARG VCS_REF
+
+## Label the image
+LABEL maintainer="Nicholas Westerhausen"
+LABEL org.label-schema.build-date=$BUILD_DATE
+LABEL org.label-schema.name="Simple mkdocs Site"
+LABEL org.label-schema.description="Build and serve an mkdocs site pulled from a git repo."
+LABEL org.label-schema.url="https://github.com/nwesterhausen/docker-nginx-mkdocs-material"
+LABEL org.label-schema.vcs-ref=$VCS_REF
+LABEL org.label-schema.vcs-url="https://github.com/nwesterhausen/docker-nginx-mkdocs-material"
+LABEL org.label-schema.cmd="docker run -d -p 127.0.0.1:80:80 -e DOC_REPO=https://github.com/nwesterhausen/docker-nginx/mkdocs-material nwesterhausen/static-mkdocs-material"
+LABEL org.label-schema.schema-version="1.0"
 
 ## run.sh is executed when running the docker image
 COPY run.sh /run.sh
