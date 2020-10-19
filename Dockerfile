@@ -8,7 +8,7 @@ ENV DOC_REPO https://github.com/nwesterhausen/docker-nginx-mkdocs-material
 RUN apk update && \
   apk add --no-cache \ 
           python3 \
-          py3-pip
+          py3-pip \
           git
 
 RUN pip install --upgrade pip && \
