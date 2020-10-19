@@ -2,7 +2,7 @@
 title: Success!
 summary: This page is shown when this repo is pulled and built by mkdocs.
 authors:
-    - Nick Westerhausen @nwesterhausen
+  - Nick Westerhausen @nwesterhausen
 date: 2018-11-23
 ---
 
