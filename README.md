@@ -6,7 +6,7 @@ Pulls raw mkdocs, builds, then serves with nginx
 
 ## Usage
 
-Set up a git repository that can be cloned. This will house your mkdocs raw markdown and configuration ([Github hosted example]()).
+Set up a git repository that can be cloned. This will house your mkdocs raw markdown and configuration ([Github hosted example](https://github.com/nwesterhausen/public-wiki)).
 
 This container uses the default nxinx:alpine as a base, so the final documentation site is run on port 80 in the container.
 
