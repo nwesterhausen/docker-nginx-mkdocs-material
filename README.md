@@ -14,7 +14,7 @@ To run the container exposing the mkdocs site on localhost:8900:
 
 ```
 docker run \
-  --env "DOC_REPO=<your_reposity>" \
+  --env "DOC_REPO=<your_repository>" \
   --publish 172.0.0.1:8900:80 \
   nwesterhausen/static-mkdocs-material
 ```
