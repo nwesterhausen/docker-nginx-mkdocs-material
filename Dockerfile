@@ -27,7 +27,9 @@ RUN apk add --no-cache \
 EXPOSE 80
 
 ## By default, use this project's own git repo for the wiki
-ENV DOC_REPO https://github.com/nwesterhausen/docker-nginx-mkdocs-material
+ENV DOC_REPO github.com/nwesterhausen/docker-nginx-mkdocs-material
+## To use with a private repository, you need an access token
+ENV ACCESS_TOKEN ''
 
 ## Args used by labels
 ARG BUILD_DATE

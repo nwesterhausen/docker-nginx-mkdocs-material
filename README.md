@@ -17,8 +17,13 @@ docker run \
   nwesterhausen/static-mkdocs-material
 ```
 
+### Private repositories
+
+To use with a private repository, set the ACCESS_TOKEN variable with a personal access token that has private repo access.
+
 ## Environment Variables
 
-| Name     | Usage                                                                                              |
-| -------- | -------------------------------------------------------------------------------------------------- |
-| DOC_REPO | This should point the location of a git repository that can be pulled at runtime of the container. |
+| Name         | Usage                                                                                                                            |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------- |
+| DOC_REPO     | Web URL for repository. 'https://' will be prepended to this value                                                               |
+| ACCESS_TOKEN | For private repository, include a personal access token which gets inserted before DOC_REPO like 'https://ACCESS_TOKEN@DOC_REPO' |
