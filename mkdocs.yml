@@ -24,6 +24,9 @@ plugins:
   - markdownextradata
   - img2fig
   - mermaid2
+  - awesome-pages
+  - navtitles
+  - mkdocs_safe_text
 
 extra_javascript:
   - https://unpkg.com/mermaid/dist/mermaid.min.js

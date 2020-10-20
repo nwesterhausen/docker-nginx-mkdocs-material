@@ -4,7 +4,7 @@ summary: This page is shown when this repo is pulled and built by mkdocs.
 authors:
   - Nick Westerhausen @nwesterhausen
 date: 2018-11-23
-tags: 
+tags:
   - Example
 ---
 
@@ -19,13 +19,17 @@ Set the Environment var `ACCESS_TOKEN` to a personal access token to use this wi
 Installed plugins:
 
 - search
-- tags
-- git-authors
-- git-revision-date-localized
-- codeinclude
-- markdownextradata
-- img2fig
-- mermaid2
+- [tags](https://github.com/jldiaz/mkdocs-plugin-tags)
+- [git-authors](https://github.com/timvink/mkdocs-git-authors-plugin)
+- [git-revision-date-localized](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin)
+- [codeinclude](https://github.com/rnorth/mkdocs-codeinclude-plugin)
+- [markdownextradata](https://github.com/rosscdh/mkdocs-markdownextradata-plugin)
+- [img2fig](https://github.com/stuebersystems/mkdocs-img2fig-plugin)
+- [mermaid2](https://github.com/fralau/mkdocs-mermaid2-plugin)
+- [awesome-pages](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)
+- [blog](https://github.com/fmaida/mkdocs-blog-plugin)
+- [mkdocs_safe_text](https://github.com/raimon49/mkdocs-safe-text-plugin)
+- [navtitles](https://github.com/andyoakley/mkdocs-navtitles)
 
 Installed Extensions:
 

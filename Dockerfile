@@ -17,7 +17,6 @@ RUN apk add --no-cache \
       mkdocs \
       pygments \
       mkdocs-material \
-      mkdocs-rtd-dropdown \
       mkdocs-safe-text-plugin \
       git+https://github.com/jldiaz/mkdocs-plugin-tags.git \
       mkdocs-markdownextradata-plugin \
@@ -27,6 +26,8 @@ RUN apk add --no-cache \
       mkdocs-blog-plugin \
       mkdocs-img2fig-plugin \
       mkdocs-mermaid2-plugin \
+      mkdocs-awesome-pages-plugin \
+      git+https://github.com/andyoakley/mkdocs-navtitles \
 ## Delete possible PIP cache
   && rm -rf "$HOME/.cache" \
 ## Remove build-dep packages
