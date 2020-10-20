@@ -13,11 +13,20 @@ RUN apk add --no-cache \
       make \
       python3-dev \
 ## Install mkdocs
-  && pip3 install mkdocs pygments \
+  && pip3 install \
+      mkdocs \
+      pygments \
       mkdocs-material \
       mkdocs-rtd-dropdown \
       mkdocs-safe-text-plugin \
-      mkdocs-mermaid-plugin \
+      git+https://github.com/jldiaz/mkdocs-plugin-tags.git \
+      mkdocs-markdownextradata-plugin \
+      mkdocs-codeinclude-plugin \
+      mkdocs-git-revision-date-localized-plugin \
+      mkdocs-git-authors-plugin \
+      mkdocs-blog-plugin \
+      mkdocs-img2fig-plugin \
+      mkdocs-mermaid2-plugin \
 ## Delete possible PIP cache
   && rm -rf "$HOME/.cache" \
 ## Remove build-dep packages
