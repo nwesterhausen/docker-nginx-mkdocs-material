@@ -27,6 +27,7 @@ plugins:
   - awesome-pages
   - navtitles
   - mkdocs_safe_text
+  - mkdocs_redirects
 
 extra_javascript:
   - https://unpkg.com/mermaid/dist/mermaid.min.js

@@ -12,6 +12,8 @@ RUN apk add --no-cache \
       wget \
       make \
       python3-dev \
+  && pip3 install \
+      wheel \
 ## Install mkdocs
   && pip3 install \
       mkdocs \
@@ -28,6 +30,7 @@ RUN apk add --no-cache \
       mkdocs-mermaid2-plugin \
       mkdocs-awesome-pages-plugin \
       git+https://github.com/andyoakley/mkdocs-navtitles \
+      mkdocs-redirects \
 ## Delete possible PIP cache
   && rm -rf "$HOME/.cache" \
 ## Remove build-dep packages

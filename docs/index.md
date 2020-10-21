@@ -30,6 +30,7 @@ Installed plugins:
 - [blog](https://github.com/fmaida/mkdocs-blog-plugin)
 - [mkdocs_safe_text](https://github.com/raimon49/mkdocs-safe-text-plugin)
 - [navtitles](https://github.com/andyoakley/mkdocs-navtitles)
+- [mkdocs-redirects](https://github.com/datarobot/mkdocs-redirects)
 
 Installed Extensions:
 
